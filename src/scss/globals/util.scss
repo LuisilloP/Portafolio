@@ -1,0 +1,15 @@
+.center-horizontal-vertical {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.dissapear {
+  top: -80px;
+  transition: 0.3s linear;
+}
+.nada {
+  transition: 0.3s linear;
+}
+.divider {
+  height: 2rem;
+}

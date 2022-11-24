@@ -1,0 +1,40 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
+
+.skill-container {
+  h2 {
+    text-align: center;
+  }
+  .skills {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    @include mix.Tablet {
+      width: 95%;
+    }
+    .skill {
+      background-color: #1a1a1a;
+      border-radius: 5px;
+      padding: 2rem;
+      transition: all 2s ease;
+      h3 {
+        text-align: center;
+      }
+      .container-logos {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+      @include mix.SmartphonePocket {
+        width: auto;
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgb(123, 123, 123);
+      }
+    }
+  }
+}

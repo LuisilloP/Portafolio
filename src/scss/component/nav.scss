@@ -1,0 +1,61 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  align-items: baseline;
+  background-color: #151515de;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 3.5rem;
+  align-items: center;
+  @include mix.Tablet {
+    justify-content: start;
+  }
+  p {
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Saira Stencil One", cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    @include mix.Tablet {
+      padding-left: 0;
+      padding-right: 30px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  ul {
+    align-items: baseline;
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    gap: 5rem;
+    padding-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  svg {
+    display: none;
+    @include mix.Tablet {
+      display: block;
+      z-index: 10;
+    }
+  }
+  .no-mobile {
+    @include mix.Tablet {
+      display: none;
+    }
+  }
+}
+.nav-mobile {
+  display: none;
+}

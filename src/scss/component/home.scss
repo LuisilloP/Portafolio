@@ -1,0 +1,47 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
+.home {
+  margin-top: 3.5rem;
+}
+.img-principal {
+  background-image: url("./public/images/principal-image.jpg");
+  min-height: 40rem;
+  background-attachment: fixed;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mix.Tablet {
+    min-height: 30rem;
+  }
+}
+.logo-text {
+  color: white;
+  font-family: "Saira Stencil One", cursive;
+  font-size: 5rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  margin: 0;
+  @include mix.Tablet {
+    font-size: 3.5rem;
+  }
+}
+.my-proyects {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  .skill-shot {
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(
+      160deg,
+      rgba(255, 0, 107, 1) 0%,
+      rgba(52, 0, 255, 1) 100%
+    );
+    img {
+      height: 30vw;
+      width: 50vw;
+      border-radius: 5px;
+    }
+  }
+}
