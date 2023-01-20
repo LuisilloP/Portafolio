@@ -1,0 +1,35 @@
+.footer {
+  height: 12rem;
+  background-color: rgba(9, 9, 9, 0.87);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .logo-nav-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px 1rem 0px;
+    .no-mobile {
+      display: flex;
+      gap: 5rem;
+
+      .no-mobile {
+        display: none;
+      }
+    }
+    .social-media {
+      display: flex;
+      gap: 1rem;
+      padding-right: 2rem;
+      .img-social {
+        height: 2rem;
+        filter: invert(100%);
+      }
+    }
+  }
+  .terms-politic {
+    display: flex;
+    gap: 10rem;
+    padding: 1rem 0px 1rem 0px;
+    width: 55rem;
+    margin: auto;
+  }
+}

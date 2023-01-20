@@ -1,0 +1,66 @@
+[
+   {
+      "title": "Propiedades",
+      "arrImg": [
+         "https://i.postimg.cc/htSsm61P/IPP.png",
+         "https://i.postimg.cc/TYjQpfm4/IPP1.png",
+         "https://i.postimg.cc/RZXRLdg1/IPI.png",
+         "https://i.postimg.cc/Nfvps5yX/IPII.png",
+         "https://i.postimg.cc/PJYybk7N/IPF.png"
+      ],
+      "about": "EL proyecto trataba de bla bla bla ",
+      "tools": [
+         "react",
+         "javascript",
+         "sass",
+         "vite",
+         "nodeJs",
+         "mongoDb",
+         "materialUi"
+      ],
+      "extra": [
+         []
+      ]
+   },
+   {
+      "title": "GamerShop",
+      "arrImg": [
+         "https://i.postimg.cc/QxtVgn7k/G-1.png",
+         "https://i.postimg.cc/G2x9KWzz/G-2.png",
+         "https://i.postimg.cc/x8j8464Q/G-4.png",
+         "https://i.postimg.cc/Z5X95FCP/G-5.png",
+         "https://i.postimg.cc/qRVCjXrB/G-6.png",
+         "https://i.postimg.cc/50V6w456/G-7.png"
+      ],
+      "about": "El motivo de desarrollo de este proyecto fue la calificación como entrega para el término de un curso JavaScript dentro de coderhouse. En el cual participe dentro de los 10 mejores y se obtuvo acceso para participar en un proyecto real que también está como ejemplo dentro de este.\n\nEl sitio web consiste de código html scss y javascript. Es un sitio web estático que fue diseñado también con react y la herramienta vite para una mayor organización y compilación de esta misma. Fue necesario el uso de una conexión fetch hacia un archivo json donde contener los datos.",
+      "tools": [
+         "react",
+         "javascript",
+         "sass",
+         "vite"
+      ],
+      "extra": [
+         []
+      ]
+   },
+   {
+      "title": "Skillshot",
+      "arrImg": [
+         "https://i.postimg.cc/htSsm61P/IPP.png",
+         "https://i.postimg.cc/TYjQpfm4/IPP1.png",
+         "https://i.postimg.cc/RZXRLdg1/IPI.png",
+         "https://i.postimg.cc/Nfvps5yX/IPII.png",
+         "https://i.postimg.cc/PJYybk7N/IPF.png"
+      ],
+      "about": "Esta página fue un proyecto internacional realizado con un equipo de 5 integrantes: dos diseñadores gráficos, una persona en márqueting y dos programadores. Este es el proyecto real por parte de coderhouse.\n\nEl proyecto fue Realizado para un cliente argentino dueño de un establecimiento en el cual se practica futbol, practicando tiros y todo lo relacionado. consta de una página principal, página de información, reglas y un formulario de contacto que se conecta a una API de correos la cual al momento de completar el formulario este envía todos los datos a nuestro cliente.\n\nComo programador principal me encargue de dirigir como que herramientas utilizar y para este proyecto para probar mis habilidades utilice typescrip, ya que contaba con experiencia de utilizar el lenguaje C# no tuve ningún inconveniente y el proyecto fue entregado en el plazo establecido y con éxito. Como acotación fue una gran experiencia porque adquirí mucho conocimiento sobre SEO, trabajar con la herramienta figma y el trabajo en equipo. ",
+      "tools": [
+         "react",
+         "typescript",
+         "sass",
+         "vite"
+      ],
+      "extra": [
+         []
+      ]
+   }
+]

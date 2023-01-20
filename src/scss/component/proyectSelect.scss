@@ -1,0 +1,27 @@
+.proyect {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  .proyect-title {
+    text-align: center;
+  }
+  .proyect-about {
+    white-space: pre-wrap;
+  }
+  .proyect-images {
+    height: 40rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+.ToolBox {
+  display: flex;
+  gap: 1rem;
+  svg {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+  }
+}

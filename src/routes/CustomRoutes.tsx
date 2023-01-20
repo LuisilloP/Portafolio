@@ -7,6 +7,7 @@ import UptoTop from "../hooks/UptoTop";
 //pages
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
+import Proyecto from "../pages/Proyecto";
 type Props = {};
 
 const CustomRoutes = (props: Props) => {
@@ -17,6 +18,7 @@ const CustomRoutes = (props: Props) => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Contacto" element={<Contact />}></Route>
+          <Route path="/Proyecto/:name" element={<Proyecto />}></Route>
         </Routes>
       </HelmetProvider>
     </AnimatePresence>

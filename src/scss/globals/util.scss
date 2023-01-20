@@ -13,3 +13,70 @@
 .divider {
   height: 2rem;
 }
+.circle-layer {
+  background: linear-gradient(
+    153deg,
+    rgba(0, 102, 255, 1) 0%,
+    rgba(0, 255, 116, 1) 100%
+  );
+  filter: blur(600px);
+  border-radius: 50%;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  top: -20rem;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.min-height-div {
+  min-height: 900px;
+}
+.padding-header {
+  padding-top: 4rem;
+}
+.divider-space {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    hsl(0deg, 0%, 20%),
+    hsl(0, 1.6%, 36.3%),
+    hsl(0, 0%, 36.9%)
+  );
+  margin: 0 auto;
+}
+.divider-green {
+  margin: 4rem auto;
+  width: 80%;
+  height: 1.2px;
+  background-color: #009891;
+}
+.Swiper-Proyect-Select {
+  height: 40rem;
+  width: 70rem;
+
+  .swiper-slide img {
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+.width-div-center {
+  width: 90%;
+  margin: 0 auto;
+}
+.spacer-svg {
+  aspect-ratio: 960/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+}
+.waves-layer {
+  background-image: url("../assets/waves.svg");
+}
+.wave-layer {
+  background-image: url("../assets/wave.svg");
+}

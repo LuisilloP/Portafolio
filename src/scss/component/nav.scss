@@ -13,25 +13,15 @@ nav {
   top: 0;
   z-index: 1000;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  min-height: 3.5rem;
+  min-height: 4.5rem;
   align-items: center;
   @include mix.Tablet {
     justify-content: start;
   }
-  p {
-    padding-left: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: "Saira Stencil One", cursive;
-    font-size: 1.5rem;
+
+  a {
+    text-decoration: none;
     color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    @include mix.Tablet {
-      padding-left: 0;
-      padding-right: 30px;
-      width: 100%;
-      text-align: center;
-    }
   }
   ul {
     align-items: baseline;
@@ -58,4 +48,19 @@ nav {
 }
 .nav-mobile {
   display: none;
+}
+.logo-min {
+  padding-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Saira Stencil One", cursive;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  @include mix.Tablet {
+    padding-left: 0;
+    padding-right: 30px;
+    width: 100%;
+    text-align: center;
+  }
 }

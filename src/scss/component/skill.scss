@@ -14,7 +14,7 @@
     @include mix.Tablet {
       width: 95%;
     }
-    .skill {
+    .Skill {
       background-color: #1a1a1a;
       border-radius: 5px;
       padding: 2rem;
@@ -36,5 +36,9 @@
         box-shadow: 0 0 10px rgb(123, 123, 123);
       }
     }
+  }
+  .container-btn-about {
+    padding-top: 2rem;
+    text-align: center;
   }
 }

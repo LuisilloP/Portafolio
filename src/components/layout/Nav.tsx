@@ -23,22 +23,22 @@ const Nav = (props: Props) => {
       } else if (oldValue - newValue > 0) {
         setShow(true);
       }
-      console.log(newValue);
+      // console.log(newValue);
 
       // Update the old value
       oldValue = newValue;
     });
   }, []);
-  console.log(show);
+  //console.log(show);
   return (
     <div>
       <nav className={`nav-desktop ${show ? "nada" : "dissapear"}`}>
         <MenuSvg fill={"#fff"} width={25} height={25}></MenuSvg>
-        <p>Shinning</p>
+        <p className="logo-min">Shinning</p>
         <NavBar mobile="no-mobile"></NavBar>
       </nav>
       <nav className={`nav-mobile`}>
-        <p>Shinning</p>
+        <p className="logo-min">Shinning</p>
         <NavBar mobile="mobile"></NavBar>
       </nav>
     </div>

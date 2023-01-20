@@ -8,8 +8,12 @@ type Props = {
 
 const Skill = ({ title, img, text }: Props) => {
   return (
-    <div className="skill">
-      <div className="container-logos">{img}</div>
+    <div className="Skill">
+      <div className="container-logos">
+        {img?.map((image, index) => (
+          <div key={index}>{image}</div>
+        ))}
+      </div>
       <h3>{title}</h3>
       <p>{text}</p>
     </div>

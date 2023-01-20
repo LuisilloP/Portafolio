@@ -1,7 +1,10 @@
 @use "../globals/variables.scss" as var;
 @use "../globals/mixin.scss" as mix;
 .home {
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
+}
+.text-important {
+  font-size: 1.8em;
 }
 .img-principal {
   background-image: url("./public/images/principal-image.jpg");
@@ -10,6 +13,8 @@
   background-position: center 40%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 2;
   @include mix.Tablet {
     min-height: 30rem;
   }
@@ -24,24 +29,80 @@
     font-size: 3.5rem;
   }
 }
+.about-me {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  .text-important {
+    text-align: center;
+  }
+  .about {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    width: 80%;
+    margin: 0 auto;
+    @include mix.Tablet {
+      width: 100%;
+    }
+    .text-about {
+      padding: 1rem;
+    }
+
+    .img-about {
+      justify-content: center;
+      display: flex;
+      .img-avatar {
+        height: 450px;
+        width: 250px;
+        position: relative;
+      }
+    }
+  }
+}
 .my-proyects {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  .skill-shot {
+  .font-color-style {
     border-radius: 5px;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding-top: 0.5vw;
     padding-bottom: 1rem;
+  }
+  .proyects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .skill-shot {
     background: linear-gradient(
       160deg,
       rgba(255, 0, 107, 1) 0%,
       rgba(52, 0, 255, 1) 100%
     );
-    img {
-      height: 30vw;
-      width: 50vw;
-      border-radius: 5px;
+  }
+  .propiedades {
+    background: linear-gradient(
+      14deg,
+      rgba(9, 255, 113, 1) 0%,
+      rgba(39, 122, 222, 1) 100%
+    );
+  }
+  .gamershop {
+    background: linear-gradient(
+      37deg,
+      rgba(39, 222, 196, 1) 0%,
+      rgba(1, 1, 1, 1) 100%
+    );
+  }
+  img {
+    height: 30vw;
+    width: 50vw;
+    border-radius: 5px;
+    @include mix.Tablet {
+      height: 40vw;
+      width: 80%;
     }
   }
 }
