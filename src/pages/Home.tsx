@@ -101,7 +101,7 @@ const Home = (props: Props) => {
           <NavLink
             to={`/Proyecto/${"gamershop"}`}
             state={{ name: "GamerShop" }}
-            data-aos="fade-right"
+            data-aos="fade-left"
           >
             <div className="gamershop font-color-style">
               <h2>Gamershop</h2>

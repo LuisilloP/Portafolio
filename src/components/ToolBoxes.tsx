@@ -8,6 +8,8 @@ import {
   TypescripSvg,
   MongoSvg,
   MaterialUiSvg,
+  FigmaSvg,
+  GitHubSvg,
 } from "../assets/Icons";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -123,6 +125,32 @@ const ToolBoxes = ({ icons }: Props) => {
               key={i}
             >
               <MaterialUiSvg />
+            </div>
+          );
+        }
+        if (val == "figma") {
+          return (
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1200"
+              key={i}
+            >
+              <FigmaSvg />
+            </div>
+          );
+        }
+        if (val == "gitHub") {
+          return (
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1200"
+              key={i}
+            >
+              <GitHubSvg />
             </div>
           );
         }

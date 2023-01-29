@@ -1,3 +1,5 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
 .center-horizontal-vertical {
   justify-content: center;
   display: flex;
@@ -31,6 +33,13 @@ a {
   text-decoration: none;
   color: white;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(48, 48, 48);
+  @include mix.Tablet {
+    --swiper-navigation-size: 25px;
+  }
+}
 .min-height-div {
   min-height: 900px;
 }
@@ -54,8 +63,8 @@ a {
   background-color: #009891;
 }
 .Swiper-Proyect-Select {
-  height: 40rem;
-  width: 70rem;
+  height: 40vw;
+  width: 70vw;
 
   .swiper-slide img {
     height: 100%;

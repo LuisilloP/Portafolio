@@ -1,35 +1,81 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
 .footer {
-  height: 12rem;
   background-color: rgba(9, 9, 9, 0.87);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   .logo-nav-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0px 1rem 0px;
+    padding: 1rem;
+    @include mix.Tablet {
+      flex-direction: column;
+    }
     .no-mobile {
       display: flex;
-      gap: 5rem;
+      gap: 3rem;
 
       .no-mobile {
         display: none;
       }
     }
+    ul,
+    p {
+      padding: 0 !important;
+    }
     .social-media {
       display: flex;
       gap: 1rem;
-      padding-right: 2rem;
+
+      @include mix.Tablet {
+        padding-right: 0;
+      }
       .img-social {
         height: 2rem;
         filter: invert(100%);
+        transition: all 0.2s ease;
+        &:hover {
+          filter: none !important;
+          border-radius: 13px;
+        }
+      }
+      .icon-wsp {
+        &:hover {
+          background-color: green;
+        }
+      }
+      .icon-ig {
+        &:hover {
+          background: linear-gradient(
+            10deg,
+            rgba(252, 255, 0, 1) 0%,
+            rgba(255, 56, 0, 1) 49%,
+            rgba(0, 25, 255, 1) 100%
+          );
+        }
+      }
+      .icon-github {
+        &:hover {
+          background-color: white;
+        }
+      }
+      .icon-linkedin {
+        &:hover {
+          background-color: blue;
+        }
       }
     }
   }
   .terms-politic {
     display: flex;
-    gap: 10rem;
+    gap: 7rem;
     padding: 1rem 0px 1rem 0px;
-    width: 55rem;
-    margin: auto;
+    justify-content: center;
+    @include mix.Tablet {
+      flex-direction: column;
+      gap: 0.1rem;
+      align-items: center;
+    }
   }
 }

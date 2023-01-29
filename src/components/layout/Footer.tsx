@@ -15,17 +15,20 @@ const Footer = (props: Props) => {
         <p className="logo-min">Shinning</p>
         <NavBar mobile="no-mobile"></NavBar>
         <div className="social-media">
-          <a>
-            <img className="img-social" src={linkedin}></img>
+          <a href="">
+            <img className="img-social icon-linkedin" src={linkedin}></img>
           </a>
-          <a>
-            <img className="img-social" src={github}></img>
+          <a href="https://github.com/LuisilloP/Portafolio" target="_blank">
+            <img className="img-social icon-github" src={github}></img>
           </a>
-          <a>
-            <img className="img-social" src={instagram}></img>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img className="img-social icon-ig" src={instagram}></img>
           </a>
-          <a>
-            <img className="img-social" src={whatsapp}></img>
+          <a
+            href="https://wa.me/974022976?text=Hola%20si%20estas%20interesado%20en%20mis%20proyectos%20hablame"
+            target="_blank"
+          >
+            <img className="img-social icon-wsp" src={whatsapp}></img>
           </a>
         </div>
       </div>

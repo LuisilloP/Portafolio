@@ -16,11 +16,45 @@
          "vite",
          "nodeJs",
          "mongoDb",
-         "materialUi"
+         "materialUi",
+         "gitHub"
       ],
-      "extra": [
-         []
-      ]
+      "links": {
+         "page": [
+            "no"
+         ],
+         "repository": [
+            "https://github.com/LuisilloP/PropiedadesReact",
+            "https://github.com/LuisilloP/backendPruebaCYT"
+         ]
+      },
+      "extra": {
+         "text": "Para el funcionamiento completo de este sitio web esta conecta a la api de node y en estas imágenes se puede apreciar el proceso de logeo, creacion de propiedad, modificación y eliminación de estas mismas en el sitio web.\n\nEn este logeo se guardan los datos mediante el almacenamiento local del navegador cuando el logeo es valido y redirecciona a la pagina. en caso contrario no se tendrá acceso.\n\nPara la creación y modificación se validan los datos de entrada para que estos coincidan con expresiones regulares y pasen la validación y sean enviados.\n\nFinalmente, para la eliminación se envía el identificador de la propiedad y este procede a eliminarse ",
+         "login": [
+            "https://i.postimg.cc/P5jns8JJ/Prologin-2.png",
+            "https://i.postimg.cc/fRfnwTSK/Prologin-3.png",
+            "https://i.postimg.cc/YS2cjK1w/Prologin-1.png"
+         ],
+         "create": [
+            "https://i.postimg.cc/VkVdQPH8/Pro-Create-2.png",
+            "https://i.postimg.cc/k4dMqJQk/Pro-Create-3.png",
+            "https://i.postimg.cc/zDFvDgPp/Pro-Create-4.png",
+            "https://i.postimg.cc/TY2wK3zx/Pro-Create-5.png",
+            "https://i.postimg.cc/W4ZpBFkG/Pro-Create-6.png"
+         ],
+         "update": [
+            "https://i.postimg.cc/7ZQYQCxV/Pro-Update-2.png",
+            "https://i.postimg.cc/k5b91fYJ/Pro-Update-3.png",
+            "https://i.postimg.cc/Hn2T0nZb/Pro-Update-4.png",
+            "https://i.postimg.cc/GtrcsGQc/Pro-Update-5.png",
+            "https://i.postimg.cc/4NfffvyP/Pro-Update-6.png"
+         ],
+         "dele": [
+            "https://i.postimg.cc/mD8stDmq/Pro-Delete-3.png",
+            "https://i.postimg.cc/mD8stDmq/Pro-Delete-4.png",
+            "https://i.postimg.cc/pXs2p9nH/Pro-Delete-5.png"
+         ]
+      }
    },
    {
       "title": "GamerShop",
@@ -37,30 +71,45 @@
          "react",
          "javascript",
          "sass",
-         "vite"
+         "vite",
+         "gitHub"
       ],
-      "extra": [
-         []
-      ]
+      "links": {
+         "page": [
+            "https://gamershopcursojs.netlify.app/"
+         ],
+         "repository": [
+            "https://github.com/LuisilloP/Gamershop"
+         ]
+      },
+      "extra": {}
    },
    {
       "title": "Skillshot",
       "arrImg": [
-         "https://i.postimg.cc/htSsm61P/IPP.png",
-         "https://i.postimg.cc/TYjQpfm4/IPP1.png",
-         "https://i.postimg.cc/RZXRLdg1/IPI.png",
-         "https://i.postimg.cc/Nfvps5yX/IPII.png",
-         "https://i.postimg.cc/PJYybk7N/IPF.png"
+         "https://i.postimg.cc/Pr5qGY8y/Skill-Shot-2.png",
+         "https://i.postimg.cc/c1mJ5X66/Skill-Shot-3.png",
+         "https://i.postimg.cc/yYy8tndk/Skill-Shot-4.png",
+         "https://i.postimg.cc/ZKSqwXJG/Skill-Shot-5.png",
+         "https://i.postimg.cc/rsYQw5yW/Skill-Shot-7.png"
       ],
       "about": "Esta página fue un proyecto internacional realizado con un equipo de 5 integrantes: dos diseñadores gráficos, una persona en márqueting y dos programadores. Este es el proyecto real por parte de coderhouse.\n\nEl proyecto fue Realizado para un cliente argentino dueño de un establecimiento en el cual se practica futbol, practicando tiros y todo lo relacionado. consta de una página principal, página de información, reglas y un formulario de contacto que se conecta a una API de correos la cual al momento de completar el formulario este envía todos los datos a nuestro cliente.\n\nComo programador principal me encargue de dirigir como que herramientas utilizar y para este proyecto para probar mis habilidades utilice typescrip, ya que contaba con experiencia de utilizar el lenguaje C# no tuve ningún inconveniente y el proyecto fue entregado en el plazo establecido y con éxito. Como acotación fue una gran experiencia porque adquirí mucho conocimiento sobre SEO, trabajar con la herramienta figma y el trabajo en equipo. ",
       "tools": [
          "react",
          "typescript",
          "sass",
-         "vite"
+         "vite",
+         "figma",
+         "gitHub"
       ],
-      "extra": [
-         []
-      ]
+      "links": {
+         "page": [
+            "https://skillshot.netlify.app/"
+         ],
+         "repository": [
+            "https://github.com/LuisilloP/CoderHouseSkillShoot"
+         ]
+      },
+      "extra": {}
    }
 ]
