@@ -5,17 +5,19 @@ import whatsapp from "/images/social/whatsapp.png";
 import github from "/images/social/github.png";
 import instagram from "/images/social/instagram.png";
 import { NavLink } from "react-router-dom";
+import MenuMobile from "../../hooks/MenuMobile";
 type Props = {};
 
 const Footer = (props: Props) => {
+  const { menuMobile, SetmenuMobile } = MenuMobile();
   return (
     <div className="footer">
       <div className="logo-nav-social">
         {" "}
-        <p className="logo-min">Shinning</p>
-        <NavBar mobile="no-mobile"></NavBar>
+        <p className="logo-min">Shining</p>
+        <NavBar mobile="no-mobile" SetmenuMobile={SetmenuMobile}></NavBar>
         <div className="social-media">
-          <a href="">
+          <a href="https://www.linkedin.com/in/luis-araya-programer">
             <img className="img-social icon-linkedin" src={linkedin}></img>
           </a>
           <a href="https://github.com/LuisilloP/Portafolio" target="_blank">
@@ -25,7 +27,7 @@ const Footer = (props: Props) => {
             <img className="img-social icon-ig" src={instagram}></img>
           </a>
           <a
-            href="https://wa.me/974022976?text=Hola%20si%20estas%20interesado%20en%20mis%20proyectos%20hablame"
+            href="https://wa.me/56974022976?text=Hola%20Estoy%20Interesado"
             target="_blank"
           >
             <img className="img-social icon-wsp" src={whatsapp}></img>

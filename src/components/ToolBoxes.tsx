@@ -10,6 +10,9 @@ import {
   MaterialUiSvg,
   FigmaSvg,
   GitHubSvg,
+  CSharpSvg,
+  MysqlSvg,
+  SqlServerSvg,
 } from "../assets/Icons";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -22,7 +25,7 @@ const ToolBoxes = ({ icons }: Props) => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="ToolBox">
+    <>
       {icons.map((val, i) => {
         if (val == "react") {
           return (
@@ -154,9 +157,61 @@ const ToolBoxes = ({ icons }: Props) => {
             </div>
           );
         }
+        if (val == "gitHub") {
+          return (
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1200"
+              key={i}
+            >
+              <GitHubSvg />
+            </div>
+          );
+        }
+        if (val == "c#") {
+          return (
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1200"
+              key={i}
+            >
+              <CSharpSvg />
+            </div>
+          );
+        }
+        if (val == "mysql") {
+          return (
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1200"
+              key={i}
+            >
+              <MysqlSvg />
+            </div>
+          );
+        }
+        if (val == "sqlserver") {
+          return (
+            <div
+              className="box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1200"
+              key={i}
+            >
+              <SqlServerSvg />
+            </div>
+          );
+        }
         return null;
       })}
-    </div>
+    </>
   );
 };
 

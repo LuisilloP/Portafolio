@@ -1,0 +1,18 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
+.swal2-popup {
+  background: #191919 !important;
+  color: #fff !important;
+}
+
+.swal2-styled.swal2-confirm,
+.swal2-styled.swal2-cancel {
+  width: auto !important;
+}
+.swal2-warning {
+  border-color: #06c085 !important;
+  color: #06c085 !important;
+}
+.swal2-title {
+  color: #efefef !important;
+}

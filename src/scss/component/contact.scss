@@ -1,0 +1,33 @@
+@use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
+.contact-page {
+  padding-top: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  @include mix.Tablet {
+    width: 95%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .contact-name-mail {
+    display: flex;
+    gap: 1rem;
+    @include mix.Smartphone {
+      flex-direction: column;
+    }
+  }
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .btn-send-form {
+    background-color: #009891;
+    height: 3rem;
+    &:hover {
+      background-color: #08bdb4;
+    }
+  }
+}

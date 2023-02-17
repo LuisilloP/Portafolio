@@ -1,4 +1,5 @@
 @use "../globals/variables.scss" as var;
+@use "../globals/mixin.scss" as mix;
 .btn-contact {
   width: 9.5rem;
   height: 2.5rem;
@@ -24,6 +25,9 @@
   &:hover {
     cursor: pointer;
     background-color: #20dbd8;
+  }
+  @include mix.SmartphonePocket {
+    width: 13rem;
   }
 }
 .menu-svg {

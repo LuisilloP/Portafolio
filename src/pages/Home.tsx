@@ -25,18 +25,19 @@ const Home = (props: Props) => {
         <div className="circle-layer"></div>
       </div>
       <div className="about-me">
-        <h2 className="text-important">Sobre Mi</h2>
+        <h2 className="text-important">Bienvenido a mi portafolio</h2>
         <div className="about">
           <div className="text-about">
-            <h2>Luis Araya</h2>
+            <h2>Sobre mi</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-              esse, fugit ipsa dolore officiis mollitia similique ad, sunt
-              dolores, ab est soluta labore? Excepturi magni doloribus obcaecati
-              mollitia libero quia! Neque sapiente saepe, dolorem hic, eum
-              dolorum, impedit beatae repudiandae maxime eligendi cum nulla
-              numquam et facere. Deserunt quia reprehenderit officiis nam atque
-              hic, repudiandae debitis natus voluptatem nesciunt accusantium.
+              Hola, Bienvenido aquí a mi portafolio, espero que sea del agrado
+              de todo el que este viendo esto. Me presento con un pequeño
+              resumen. Soy Luis Araya un técnico Analista programador titulado,
+              me estoy especializando en el sector web más específicamente en
+              React que es en lo que está hecho este portafolio y muchos de mis
+              proyectos. De igual manera podría aprender lo que sea si es
+              requerido. Y bueno no veas mas esto y mira el resto del
+              portafolio.
             </p>
           </div>
           <div className="img-about">
@@ -68,8 +69,8 @@ const Home = (props: Props) => {
           ></Skill>
         </div>
         <div className="container-btn-about">
-          <NavLink to="/Habilidades">
-            <button className="btn-more">Mas sobre mis habilidades</button>
+          <NavLink to="/MasSobreMi">
+            <button className="btn-more">Mas sobre Mi</button>
           </NavLink>
         </div>
       </div>

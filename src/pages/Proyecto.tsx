@@ -15,7 +15,7 @@ const Proyecto = (props: Props) => {
 
   console.log(DBP[0]);
   return (
-    <div className="padding-header min-height-div">
+    <div className="margin-header-top min-height-div">
       {DBP.map((value, i) => {
         if (value.title == name) {
           return (
@@ -35,7 +35,10 @@ const Proyecto = (props: Props) => {
               </div>
               <div className="proyect-lenguaje">
                 <h2>Lenguaje y herramientas utilizadas</h2>
-                <ToolBoxes icons={value.tools} />
+                <div className="ToolBox">
+                  {" "}
+                  <ToolBoxes icons={value.tools} />
+                </div>
               </div>
               <div className="proyect-link">
                 <h2>Enlaces</h2>

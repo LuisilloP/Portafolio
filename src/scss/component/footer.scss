@@ -14,15 +14,15 @@
     }
     .no-mobile {
       display: flex;
-      gap: 3rem;
-
-      .no-mobile {
-        display: none;
+      gap: 1rem;
+      @include mix.SmartphonePocket {
+        flex-direction: column;
       }
     }
     ul,
     p {
       padding: 0 !important;
+      list-style: none;
     }
     .social-media {
       display: flex;

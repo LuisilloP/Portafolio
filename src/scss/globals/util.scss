@@ -12,6 +12,10 @@
 .nada {
   transition: 0.3s linear;
 }
+.hidden-y {
+  height: 100%;
+  overflow-y: hidden;
+}
 .divider {
   height: 2rem;
 }
@@ -46,6 +50,9 @@ a {
 .padding-header {
   padding-top: 4rem;
 }
+.margin-header-top {
+  margin-top: 4rem;
+}
 .divider-space {
   height: 2px;
   background: linear-gradient(
@@ -65,7 +72,10 @@ a {
 .Swiper-Proyect-Select {
   height: 40vw;
   width: 70vw;
-
+  @include mix.Tablet {
+    height: 60vw;
+    width: 90vw;
+  }
   .swiper-slide img {
     height: 100%;
     border-radius: 8px;
@@ -88,4 +98,22 @@ a {
 }
 .wave-layer {
   background-image: url("../assets/wave.svg");
+}
+
+// material ui
+input,
+textarea {
+  background-color: #272727 !important;
+}
+fieldset {
+  border-color: #b4b4b4 !important;
+}
+label {
+  color: rgb(193, 193, 193) !important;
+}
+.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
+  background-color: #272727 !important;
+}
+.MuiFormHelperText-root {
+  color: #ea0101 !important;
 }

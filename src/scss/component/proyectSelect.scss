@@ -13,7 +13,6 @@
     white-space: pre-wrap;
   }
   .proyect-images {
-    height: 40rem;
     img {
       width: 100%;
     }
@@ -36,35 +35,24 @@
       flex-direction: column;
     }
     .container-swiper-extra {
-      width: 44rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
 
       .extra-swiper {
         width: 44rem;
         height: 24rem;
 
+        @include mix.Tablet {
+          height: 60vw;
+          width: 90vw;
+        }
         img {
           width: 100%;
           height: 100%;
+          border-radius: 15px;
         }
       }
-    }
-  }
-}
-.ToolBox {
-  gap: 1rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
-  @include mix.Tablet {
-    width: 90%;
-  }
-  svg {
-    padding: 2rem;
-    background-color: #1a1a1a;
-    border-radius: 5px;
-    @include mix.Tablet {
-      align-items: center;
-      align-content: center;
     }
   }
 }
